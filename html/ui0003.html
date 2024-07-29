@@ -1,0 +1,675 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<title>BETTERLIFE</title>
+	<meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=yes">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+
+	<!-- reset css -->
+    <link href="../css/reset.css" rel="stylesheet" type="text/css">
+    <link href="../css/fonts.css" rel="stylesheet" type="text/css">
+    <link href="../css/utility.css" rel="stylesheet" type="text/css">
+
+    <!-- dist/css -->
+    <link href="../dist/css/style.css" rel="stylesheet" type="text/css">
+
+    <!-- custom css -->
+    <link href="../css/common.css" rel="stylesheet" type="text/css">
+    <link href="../css/components.css" rel="stylesheet" type="text/css">
+    <link href="../css/main.css" rel="stylesheet" type="text/css">
+    <link href="../css/sub.css" rel="stylesheet" type="text/css">
+
+    <!-- jquery -->
+    <script src="../js/jquery-3.6.3.min.js"></script>
+
+    <!-- dist/js -->
+    <script src="../dist/js/script.js"></script>
+    
+    <!-- custom js -->
+    <script src="../js/common.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/sub.js"></script>
+</head>
+<body>
+    <!-- content -->
+    <div id="content">
+        <div class="lnb">
+            <h1 class="logo white"></h1>
+
+            <div class="gnb">
+                <ul>
+                    <li>
+                        <a href="javascript:void(0);">
+                            <i class="ic-gnb01"></i>
+                            <p>실시간 현황</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">
+                            <i class="ic-gnb02"></i>
+                            <p>실시간 그래프</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">
+                            <i class="ic-gnb03"></i>
+                            <p>관리일지</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">
+                            <i class="ic-gnb04"></i>
+                            <p>인증서</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">
+                            <i class="ic-gnb05"></i>
+                            <p>설정</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="contents">
+            <div class="headline">
+                <p>전 측정지점 실시간 현황</p>
+            </div>
+            <div class="chart">
+                <div class="container">
+                    <div class="division">
+                        <div class="filter">
+                            <div class="requirement-area">
+                                <div class="item">
+                                    <div class="tit-area">
+                                        <p>측정분류</p>
+                                    </div>
+                                    <div class="cont-area">
+                                        <select name="" id="" class="v1">
+                                            <option value="">라돈</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="tit-area">
+                                        <p>측정지점</p>
+                                    </div>
+                                    <div class="cont-area">
+                                        <select name="" id="" class="v1">
+                                            <option value="">실시간전체</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="tit-area">
+                                        <p>상세기간</p>
+                                    </div>
+                                    <div class="cont-area">
+                                        <div class="period">
+                                            <div class="date">
+                                                <input type="text" name="" id="">
+                                                <input type="date" name="" id="">
+                                            </div>
+                                            <div class="has-unit">
+                                                <select name="" id="" class="v1">
+                                                    <option value="">00</option>
+                                                </select>
+                                                <p class="unit">시</p>
+                                            </div>
+                                            <p>~</p>
+                                            <div class="date">
+                                                <input type="text" name="" id="">
+                                                <input type="date" name="" id="">
+                                            </div>
+                                            <div class="has-unit">
+                                                <select name="" id="" class="v1">
+                                                    <option value="">00</option>
+                                                </select>
+                                                <p class="unit">시</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sort-area">
+                                <button class="btn md line-green"><i class="ic-search green"></i>검색</button>
+                                <button class="btn md line-green"><i class="ic-filter green"></i>상세조회</button>
+
+                                <div class="radio-area v1">
+                                    <div class="radio v1">
+                                        <input type="radio" name="" id="" checked>
+                                        <label for="">
+                                            <p>7일</p>
+                                        </label>
+                                    </div>
+                                    <div class="radio v1">
+                                        <input type="radio" name="" id="">
+                                        <label for="">
+                                            <p>1개월</p>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="division">
+                        <!-- 그래프 -->
+                    </div>
+
+                    <div class="division">
+                        <p class="tit v2">실시간 수치</p>
+
+                        <div class="legend">
+                            <dl>
+                                <dt>라돈</dt>
+                                <dd>Bq/㎥</dd>
+                            </dl>
+                            <dl>
+                                <dt>CO2</dt>
+                                <dd>ppm</dd>
+                            </dl>
+                            <dl>
+                                <dt>온도</dt>
+                                <dd>OC</dd>
+                            </dl>
+                            <dl>
+                                <dt>습도</dt>
+                                <dd>%</dd>
+                            </dl>
+                            <dl>
+                                <dt>초미세먼지</dt>
+                                <dd>PM2.5, μg/m3</dd>
+                            </dl>
+                            <dl>
+                                <dt>미세먼지</dt>
+                                <dd>PM10, μg/m3</dd>
+                            </dl>
+                        </div>
+
+                        <div class="tbl-wrap v1">
+                            <table>
+                                <colgroup>
+                                    <col>
+                                    <col>
+                                    <col>
+                                    <col>
+                                    <col>
+                                    <col>
+                                    <col>
+                                    <col>
+                                    <col>
+                                    <col>
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th>장소</th>
+                                        <th>최종 측정시간</th>
+                                        <th>라돈</th>
+                                        <th>CO2</th>
+                                        <th>초미세먼지</th>
+                                        <th>미세먼지</th>
+                                        <th>VOC</th>
+                                        <th>온도</th>
+                                        <th>습도</th>
+                                        <th>저감장치</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>펭귄반</td>
+                                        <td>2024.01.01  10:00</td>
+                                        <td>60.5<p class="label v1 clr01">다소낮음</p></td>
+                                        <td>0</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>값 없음</td>
+                                        <td>22.4</td>
+                                        <td>0</td>
+                                        <td>
+                                            <div class="check-area v2">
+                                                <div class="check v2">
+                                                    <input type="checkbox" name="" id="">
+                                                    <label for="">
+                                                        <i class="ic-fan"></i>
+                                                    </label>
+                                                </div>
+                                                <div class="check v2">
+                                                    <input type="checkbox" name="" id="">
+                                                    <label for="">
+                                                        <i class="ic-fan"></i>
+                                                    </label>
+                                                </div>
+                                                <div class="check v2">
+                                                    <input type="checkbox" name="" id="">
+                                                    <label for="">
+                                                        <i class="ic-shuffle"></i>
+                                                    </label>
+                                                </div>
+                                                <div class="check v2">
+                                                    <input type="checkbox" name="" id="">
+                                                    <label for="">
+                                                        <i class="ic-shuffle"></i>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>펭귄반</td>
+                                        <td>2024.01.01  10:00</td>
+                                        <td>60.5<p class="label v1 clr05">다소높음</p></td>
+                                        <td>0</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>값 없음</td>
+                                        <td>22.4</td>
+                                        <td>0</td>
+                                        <td>
+                                            <div class="check-area v2">
+                                                <div class="check v2">
+                                                    <input type="checkbox" name="" id="">
+                                                    <label for="">
+                                                        <i class="ic-fan"></i>
+                                                    </label>
+                                                </div>
+                                                <div class="check v2">
+                                                    <input type="checkbox" name="" id="">
+                                                    <label for="">
+                                                        <i class="ic-fan"></i>
+                                                    </label>
+                                                </div>
+                                                <div class="check v2">
+                                                    <input type="checkbox" name="" id="">
+                                                    <label for="">
+                                                        <i class="ic-shuffle"></i>
+                                                    </label>
+                                                </div>
+                                                <div class="check v2">
+                                                    <input type="checkbox" name="" id="">
+                                                    <label for="">
+                                                        <i class="ic-shuffle"></i>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="division">
+                        <p class="tit v2">시간당 평균 수치</p>
+
+                        <div class="legend">
+                            <dl>
+                                <dt>라돈</dt>
+                                <dd>Bq/㎥</dd>
+                            </dl>
+                            <dl>
+                                <dt>CO2</dt>
+                                <dd>ppm</dd>
+                            </dl>
+                            <dl>
+                                <dt>온도</dt>
+                                <dd>OC</dd>
+                            </dl>
+                            <dl>
+                                <dt>습도</dt>
+                                <dd>%</dd>
+                            </dl>
+                            <dl>
+                                <dt>초미세먼지</dt>
+                                <dd>PM2.5, μg/m3</dd>
+                            </dl>
+                            <dl>
+                                <dt>에어코리아</dt>
+                                <dd>PM10/PM2.5, μg/m3</dd>
+                            </dl>
+                        </div>
+
+                        <div class="tbl-wrap v1">
+                            <table>
+                                <colgroup>
+                                    <col>
+                                    <col>
+                                    <col>
+                                    <col>
+                                    <col>
+                                    <col>
+                                    <col>
+                                    <col>
+                                    <col>
+                                    <col>
+                                    <col>
+                                    <col>
+                                    <col>
+                                    <col>
+                                    <col>
+                                    <col>
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th>측정일</th>
+                                        <th>측정시간</th>
+                                        <th>라돈</th>
+                                        <th>라돈등급</th>
+                                        <th>온도</th>
+                                        <th>습도</th>
+                                        <th>VOC</th>
+                                        <th>CO2</th>
+                                        <th>초미세먼지</th>
+                                        <th>미세먼지</th>
+                                        <th>에어코리아</th>
+                                        <th>라돈센서</th>
+                                        <th>창문환기</th>
+                                        <th>창문환기</th>
+                                        <th>저감장치</th>
+                                        <th>저감장치</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>2024.01.01</td>
+                                        <td>09:00 ~ 10:00</td>
+                                        <td>23</td>
+                                        <td><p class="label v1 clr01">다소낮음</p></td>
+                                        <td>23</td>
+                                        <td>0</td>
+                                        <td>값 없음</td>
+                                        <td>-</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0 / 0</td>
+                                        <td>
+                                            <div class="check v2">
+                                                <input type="checkbox" name="" id="" checked>
+                                                <label for="">
+                                                </label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="check v2">
+                                                <input type="checkbox" name="" id="" checked>
+                                                <label for="">
+                                                </label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="check v2">
+                                                <input type="checkbox" name="" id="" checked>
+                                                <label for="">
+                                                </label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="check v2">
+                                                <input type="checkbox" name="" id="">
+                                                <label for="">
+                                                </label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="check v2">
+                                                <input type="checkbox" name="" id="">
+                                                <label for="">
+                                                </label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>2024.01.01</td>
+                                        <td>09:00 ~ 10:00</td>
+                                        <td>23</td>
+                                        <td><p class="label v1 clr05">다소높음</p></td>
+                                        <td>23</td>
+                                        <td>0</td>
+                                        <td>값 없음</td>
+                                        <td>-</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0 / 0</td>
+                                        <td>
+                                            <div class="check v2">
+                                                <input type="checkbox" name="" id="" checked>
+                                                <label for="">
+                                                </label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="check v2">
+                                                <input type="checkbox" name="" id="" checked>
+                                                <label for="">
+                                                </label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="check v2">
+                                                <input type="checkbox" name="" id="" checked>
+                                                <label for="">
+                                                </label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="check v2">
+                                                <input type="checkbox" name="" id="">
+                                                <label for="">
+                                                </label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="check v2">
+                                                <input type="checkbox" name="" id="">
+                                                <label for="">
+                                                </label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>2024.01.01</td>
+                                        <td>09:00 ~ 10:00</td>
+                                        <td>23</td>
+                                        <td><p class="label v1 clr03">보통</p></td>
+                                        <td>23</td>
+                                        <td>0</td>
+                                        <td>값 없음</td>
+                                        <td>-</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0 / 0</td>
+                                        <td>
+                                            <div class="check v2">
+                                                <input type="checkbox" name="" id="" checked>
+                                                <label for="">
+                                                </label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="check v2">
+                                                <input type="checkbox" name="" id="" checked>
+                                                <label for="">
+                                                </label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="check v2">
+                                                <input type="checkbox" name="" id="" checked>
+                                                <label for="">
+                                                </label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="check v2">
+                                                <input type="checkbox" name="" id="">
+                                                <label for="">
+                                                </label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="check v2">
+                                                <input type="checkbox" name="" id="">
+                                                <label for="">
+                                                </label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>2024.01.01</td>
+                                        <td>09:00 ~ 10:00</td>
+                                        <td>23</td>
+                                        <td><p class="label v1 clr01">다소낮음</p></td>
+                                        <td>23</td>
+                                        <td>0</td>
+                                        <td>값 없음</td>
+                                        <td>-</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0 / 0</td>
+                                        <td>
+                                            <div class="check v2">
+                                                <input type="checkbox" name="" id="" checked>
+                                                <label for="">
+                                                </label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="check v2">
+                                                <input type="checkbox" name="" id="" checked>
+                                                <label for="">
+                                                </label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="check v2">
+                                                <input type="checkbox" name="" id="" checked>
+                                                <label for="">
+                                                </label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="check v2">
+                                                <input type="checkbox" name="" id="">
+                                                <label for="">
+                                                </label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="check v2">
+                                                <input type="checkbox" name="" id="">
+                                                <label for="">
+                                                </label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>2024.01.01</td>
+                                        <td>09:00 ~ 10:00</td>
+                                        <td>23</td>
+                                        <td><p class="label v1 clr05">다소높음</p></td>
+                                        <td>23</td>
+                                        <td>0</td>
+                                        <td>값 없음</td>
+                                        <td>-</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0 / 0</td>
+                                        <td>
+                                            <div class="check v2">
+                                                <input type="checkbox" name="" id="" checked>
+                                                <label for="">
+                                                </label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="check v2">
+                                                <input type="checkbox" name="" id="" checked>
+                                                <label for="">
+                                                </label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="check v2">
+                                                <input type="checkbox" name="" id="" checked>
+                                                <label for="">
+                                                </label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="check v2">
+                                                <input type="checkbox" name="" id="">
+                                                <label for="">
+                                                </label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="check v2">
+                                                <input type="checkbox" name="" id="">
+                                                <label for="">
+                                                </label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>2024.01.01</td>
+                                        <td>09:00 ~ 10:00</td>
+                                        <td>23</td>
+                                        <td><p class="label v1 clr03">보통</p></td>
+                                        <td>23</td>
+                                        <td>0</td>
+                                        <td>값 없음</td>
+                                        <td>-</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0 / 0</td>
+                                        <td>
+                                            <div class="check v2">
+                                                <input type="checkbox" name="" id="" checked>
+                                                <label for="">
+                                                </label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="check v2">
+                                                <input type="checkbox" name="" id="" checked>
+                                                <label for="">
+                                                </label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="check v2">
+                                                <input type="checkbox" name="" id="" checked>
+                                                <label for="">
+                                                </label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="check v2">
+                                                <input type="checkbox" name="" id="">
+                                                <label for="">
+                                                </label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="check v2">
+                                                <input type="checkbox" name="" id="">
+                                                <label for="">
+                                                </label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- // content -->
+</body>
+</html>
