@@ -3,78 +3,24 @@
 /*-------------------------------------------------------------------
     파일정의 : 레이아웃
 -------------------------------------------------------------------*/
+.logo.gray {width: 138px; height: 25px; background; url('../img/common/logo_g.png') no-repeat center; background-size: 100%;}
+.logo.white {width: 90px; height: 54px; background; url('../img/common/logo_g.png') no-repeat center; background-size: 100%;}
 /*-------------------------------------------------------------------
-    @공통
+    @lnb
 -------------------------------------------------------------------*/
-#skip-nav {height:0}
-#skip-nav a {display: block; position: absolute; left: 0; top: -100px; width: 100%; height: 1px; text-align: center}
-#skip-nav a:focus, #skip a:active {position: absolute; top: 0; z-index: 120; height: 25px; padding: 10px 0; font-size: 1.4em; font-weight: 700; color: #36348f; background: #fff;}
-
-/*-------------------------------------------------------------------
-    @header
--------------------------------------------------------------------*/
-#header{}
-#header.on{}
-
-.logo{}
-.logo a{ display: block; width: 100%; height: 100%; text-indent: -9999px; }
-
-.gnb{}
-
-.gnb-m{}
-
-.etc {}
-
-.shortcut {}
-
-.util {}
-
-.support {}
-
-.assistant {}
-
-.branding {}
- 
-/*-------------------------------------------------------------------
-    @footer
--------------------------------------------------------------------*/
-#footer{}
-
-.link{}
-
-.family{}
-
-.sns{}
-
-.address{}
-
-.logo-f{}
-
-.copyright{}
-
-.fnb {}
- 
+.lnb {width: 120px; background-color: #343A40; position: fixed; height: 100dvh;}
+.lnb .lnb-head {height: 120px; display: flex; align-items: center; justify-content: center; border-bottom: 1px solid #495057;}
+.lnb .gnb ul li {border-bottom: 1px solid #495057;}
+.lnb .gnb ul li a {display: flex; align-items: center; justify-content: center; height: 83px; flex-direction: column; gap: 10px 0;}
+.lnb .gnb ul li p {font-size: 14px; line-height: 1.2; color: #ffffff;}
+.lnb .gnb ul li.on {background-color: #66A80F;}
 /*-------------------------------------------------------------------
     @content
 -------------------------------------------------------------------*/
-#content{}
+#content {min-height: 100dvh; display: flex;}
+#content .lnb + .contents {margin-left: 120px; padding-bottom: 100px;}
+#content .contents {min-height: 100dvh; flex: 1 0; min-width: 0; padding-left: 30px; padding-right; 30px;}
+#content .contents .headline {padding: 60px 0}
+#content .contents .headline p {text-align: center; font-size: 32px; font-weight: 700;}
 
 .container{ margin-left: auto; margin-right: auto; position: relative; }
-.container::after{ display: block; clear: both; content: ""; }
-
-.has-padding{}
-
-/*-------------------------------------------------------------------
-    @floating
--------------------------------------------------------------------*/
- 
-/*-------------------------------------------------------------------
-    @popup
--------------------------------------------------------------------*/
-.popup{}
-
-.popup .pop-head{}
-
-.popup .pop-cont{}
-
-.popup .pop-footer{}
