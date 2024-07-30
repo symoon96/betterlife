@@ -29,7 +29,9 @@
     <!-- content -->
     <div id="content">
         <div class="lnb">
-            <h1 class="logo white"></h1>
+            <div class="lnb-head">
+                <h1 class="logo white"></h1>
+            </div>
 
             <div class="gnb">
                 <ul>
@@ -39,7 +41,7 @@
                             <p>실시간 현황</p>
                         </a>
                     </li>
-                    <li>
+                    <li class="on">
                         <a href="javascript:void(0);">
                             <i class="ic-gnb02"></i>
                             <p>실시간 그래프</p>
@@ -127,10 +129,13 @@
                                 </div>
                             </div>
                             <div class="sort-area">
-                                <button class="btn md line-green"><i class="ic-search green"></i>검색</button>
-                                <button class="btn md line-green"><i class="ic-filter green"></i>상세조회</button>
+                                <div class="d-flex gap-2">
+                                    <button class="btn md line-green"><i class="ic-search green"></i>검색</button>
+                                    <button class="btn md line-green"><i class="ic-filter green"></i>상세조회</button>
 
-                                <div class="radio-area v1">
+                                </div>
+
+                                <div class="d-flex gap-1">
                                     <div class="radio v1">
                                         <input type="radio" name="" id="" checked>
                                         <label for="">
@@ -161,12 +166,12 @@
                                 <dd>Bq/㎥</dd>
                             </dl>
                             <dl>
-                                <dt>CO2</dt>
+                                <dt>CO₂</dt>
                                 <dd>ppm</dd>
                             </dl>
                             <dl>
                                 <dt>온도</dt>
-                                <dd>OC</dd>
+                                <dd>°C</dd>
                             </dl>
                             <dl>
                                 <dt>습도</dt>
@@ -174,11 +179,11 @@
                             </dl>
                             <dl>
                                 <dt>초미세먼지</dt>
-                                <dd>PM2.5, μg/m3</dd>
+                                <dd>PM2.5, μg/㎥</dd>
                             </dl>
                             <dl>
                                 <dt>미세먼지</dt>
-                                <dd>PM10, μg/m3</dd>
+                                <dd>PM10, μg/㎥</dd>
                             </dl>
                         </div>
 
@@ -201,7 +206,7 @@
                                         <th>장소</th>
                                         <th>최종 측정시간</th>
                                         <th>라돈</th>
-                                        <th>CO2</th>
+                                        <th>CO₂</th>
                                         <th>초미세먼지</th>
                                         <th>미세먼지</th>
                                         <th>VOC</th>
@@ -223,25 +228,25 @@
                                         <td>0</td>
                                         <td>
                                             <div class="check-area v2">
-                                                <div class="check v2">
+                                                <div class="check v3">
                                                     <input type="checkbox" name="" id="">
                                                     <label for="">
                                                         <i class="ic-fan"></i>
                                                     </label>
                                                 </div>
-                                                <div class="check v2">
+                                                <div class="check v3">
                                                     <input type="checkbox" name="" id="">
                                                     <label for="">
                                                         <i class="ic-fan"></i>
                                                     </label>
                                                 </div>
-                                                <div class="check v2">
+                                                <div class="check v3">
                                                     <input type="checkbox" name="" id="">
                                                     <label for="">
                                                         <i class="ic-shuffle"></i>
                                                     </label>
                                                 </div>
-                                                <div class="check v2">
+                                                <div class="check v3">
                                                     <input type="checkbox" name="" id="">
                                                     <label for="">
                                                         <i class="ic-shuffle"></i>
@@ -262,25 +267,25 @@
                                         <td>0</td>
                                         <td>
                                             <div class="check-area v2">
-                                                <div class="check v2">
+                                                <div class="check v3">
                                                     <input type="checkbox" name="" id="">
                                                     <label for="">
                                                         <i class="ic-fan"></i>
                                                     </label>
                                                 </div>
-                                                <div class="check v2">
+                                                <div class="check v3">
                                                     <input type="checkbox" name="" id="">
                                                     <label for="">
                                                         <i class="ic-fan"></i>
                                                     </label>
                                                 </div>
-                                                <div class="check v2">
+                                                <div class="check v3">
                                                     <input type="checkbox" name="" id="">
                                                     <label for="">
                                                         <i class="ic-shuffle"></i>
                                                     </label>
                                                 </div>
-                                                <div class="check v2">
+                                                <div class="check v3">
                                                     <input type="checkbox" name="" id="">
                                                     <label for="">
                                                         <i class="ic-shuffle"></i>
@@ -303,12 +308,12 @@
                                 <dd>Bq/㎥</dd>
                             </dl>
                             <dl>
-                                <dt>CO2</dt>
+                                <dt>CO₂</dt>
                                 <dd>ppm</dd>
                             </dl>
                             <dl>
                                 <dt>온도</dt>
-                                <dd>OC</dd>
+                                <dd>°C</dd>
                             </dl>
                             <dl>
                                 <dt>습도</dt>
@@ -316,11 +321,11 @@
                             </dl>
                             <dl>
                                 <dt>초미세먼지</dt>
-                                <dd>PM2.5, μg/m3</dd>
+                                <dd>PM2.5, μg/㎥</dd>
                             </dl>
                             <dl>
                                 <dt>에어코리아</dt>
-                                <dd>PM10/PM2.5, μg/m3</dd>
+                                <dd>PM10/PM2.5, μg/㎥</dd>
                             </dl>
                         </div>
 
@@ -353,7 +358,7 @@
                                         <th>온도</th>
                                         <th>습도</th>
                                         <th>VOC</th>
-                                        <th>CO2</th>
+                                        <th>CO₂</th>
                                         <th>초미세먼지</th>
                                         <th>미세먼지</th>
                                         <th>에어코리아</th>
@@ -378,35 +383,35 @@
                                         <td>0</td>
                                         <td>0 / 0</td>
                                         <td>
-                                            <div class="check v2">
+                                            <div class="check v4">
                                                 <input type="checkbox" name="" id="" checked>
                                                 <label for="">
                                                 </label>
                                             </div>
                                         </td>
                                         <td>
-                                            <div class="check v2">
+                                            <div class="check v4">
                                                 <input type="checkbox" name="" id="" checked>
                                                 <label for="">
                                                 </label>
                                             </div>
                                         </td>
                                         <td>
-                                            <div class="check v2">
+                                            <div class="check v4">
                                                 <input type="checkbox" name="" id="" checked>
                                                 <label for="">
                                                 </label>
                                             </div>
                                         </td>
                                         <td>
-                                            <div class="check v2">
+                                            <div class="check v4">
                                                 <input type="checkbox" name="" id="">
                                                 <label for="">
                                                 </label>
                                             </div>
                                         </td>
                                         <td>
-                                            <div class="check v2">
+                                            <div class="check v4">
                                                 <input type="checkbox" name="" id="">
                                                 <label for="">
                                                 </label>
@@ -426,35 +431,35 @@
                                         <td>0</td>
                                         <td>0 / 0</td>
                                         <td>
-                                            <div class="check v2">
+                                            <div class="check v4">
                                                 <input type="checkbox" name="" id="" checked>
                                                 <label for="">
                                                 </label>
                                             </div>
                                         </td>
                                         <td>
-                                            <div class="check v2">
+                                            <div class="check v4">
                                                 <input type="checkbox" name="" id="" checked>
                                                 <label for="">
                                                 </label>
                                             </div>
                                         </td>
                                         <td>
-                                            <div class="check v2">
+                                            <div class="check v4">
                                                 <input type="checkbox" name="" id="" checked>
                                                 <label for="">
                                                 </label>
                                             </div>
                                         </td>
                                         <td>
-                                            <div class="check v2">
+                                            <div class="check v4">
                                                 <input type="checkbox" name="" id="">
                                                 <label for="">
                                                 </label>
                                             </div>
                                         </td>
                                         <td>
-                                            <div class="check v2">
+                                            <div class="check v4">
                                                 <input type="checkbox" name="" id="">
                                                 <label for="">
                                                 </label>
@@ -474,35 +479,35 @@
                                         <td>0</td>
                                         <td>0 / 0</td>
                                         <td>
-                                            <div class="check v2">
+                                            <div class="check v4">
                                                 <input type="checkbox" name="" id="" checked>
                                                 <label for="">
                                                 </label>
                                             </div>
                                         </td>
                                         <td>
-                                            <div class="check v2">
+                                            <div class="check v4">
                                                 <input type="checkbox" name="" id="" checked>
                                                 <label for="">
                                                 </label>
                                             </div>
                                         </td>
                                         <td>
-                                            <div class="check v2">
+                                            <div class="check v4">
                                                 <input type="checkbox" name="" id="" checked>
                                                 <label for="">
                                                 </label>
                                             </div>
                                         </td>
                                         <td>
-                                            <div class="check v2">
+                                            <div class="check v4">
                                                 <input type="checkbox" name="" id="">
                                                 <label for="">
                                                 </label>
                                             </div>
                                         </td>
                                         <td>
-                                            <div class="check v2">
+                                            <div class="check v4">
                                                 <input type="checkbox" name="" id="">
                                                 <label for="">
                                                 </label>
@@ -522,35 +527,35 @@
                                         <td>0</td>
                                         <td>0 / 0</td>
                                         <td>
-                                            <div class="check v2">
+                                            <div class="check v4">
                                                 <input type="checkbox" name="" id="" checked>
                                                 <label for="">
                                                 </label>
                                             </div>
                                         </td>
                                         <td>
-                                            <div class="check v2">
+                                            <div class="check v4">
                                                 <input type="checkbox" name="" id="" checked>
                                                 <label for="">
                                                 </label>
                                             </div>
                                         </td>
                                         <td>
-                                            <div class="check v2">
+                                            <div class="check v4">
                                                 <input type="checkbox" name="" id="" checked>
                                                 <label for="">
                                                 </label>
                                             </div>
                                         </td>
                                         <td>
-                                            <div class="check v2">
+                                            <div class="check v4">
                                                 <input type="checkbox" name="" id="">
                                                 <label for="">
                                                 </label>
                                             </div>
                                         </td>
                                         <td>
-                                            <div class="check v2">
+                                            <div class="check v4">
                                                 <input type="checkbox" name="" id="">
                                                 <label for="">
                                                 </label>
@@ -570,35 +575,35 @@
                                         <td>0</td>
                                         <td>0 / 0</td>
                                         <td>
-                                            <div class="check v2">
+                                            <div class="check v4">
                                                 <input type="checkbox" name="" id="" checked>
                                                 <label for="">
                                                 </label>
                                             </div>
                                         </td>
                                         <td>
-                                            <div class="check v2">
+                                            <div class="check v4">
                                                 <input type="checkbox" name="" id="" checked>
                                                 <label for="">
                                                 </label>
                                             </div>
                                         </td>
                                         <td>
-                                            <div class="check v2">
+                                            <div class="check v4">
                                                 <input type="checkbox" name="" id="" checked>
                                                 <label for="">
                                                 </label>
                                             </div>
                                         </td>
                                         <td>
-                                            <div class="check v2">
+                                            <div class="check v4">
                                                 <input type="checkbox" name="" id="">
                                                 <label for="">
                                                 </label>
                                             </div>
                                         </td>
                                         <td>
-                                            <div class="check v2">
+                                            <div class="check v4">
                                                 <input type="checkbox" name="" id="">
                                                 <label for="">
                                                 </label>
@@ -618,35 +623,35 @@
                                         <td>0</td>
                                         <td>0 / 0</td>
                                         <td>
-                                            <div class="check v2">
+                                            <div class="check v4">
                                                 <input type="checkbox" name="" id="" checked>
                                                 <label for="">
                                                 </label>
                                             </div>
                                         </td>
                                         <td>
-                                            <div class="check v2">
+                                            <div class="check v4">
                                                 <input type="checkbox" name="" id="" checked>
                                                 <label for="">
                                                 </label>
                                             </div>
                                         </td>
                                         <td>
-                                            <div class="check v2">
+                                            <div class="check v4">
                                                 <input type="checkbox" name="" id="" checked>
                                                 <label for="">
                                                 </label>
                                             </div>
                                         </td>
                                         <td>
-                                            <div class="check v2">
+                                            <div class="check v4">
                                                 <input type="checkbox" name="" id="">
                                                 <label for="">
                                                 </label>
                                             </div>
                                         </td>
                                         <td>
-                                            <div class="check v2">
+                                            <div class="check v4">
                                                 <input type="checkbox" name="" id="">
                                                 <label for="">
                                                 </label>
