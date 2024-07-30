@@ -1,0 +1,183 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<title>BETTERLIFE</title>
+	<meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=yes">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+
+	<!-- reset css -->
+    <link href="../css/reset.css" rel="stylesheet" type="text/css">
+    <link href="../css/fonts.css" rel="stylesheet" type="text/css">
+    <link href="../css/utility.css" rel="stylesheet" type="text/css">
+
+    <!-- custom css -->
+    <link href="../css/common.css" rel="stylesheet" type="text/css">
+    <link href="../css/components.css" rel="stylesheet" type="text/css">
+    <link href="../css/style.css" rel="stylesheet" type="text/css">
+
+    <!-- jquery -->
+    <script src="../js/jquery-3.6.3.min.js"></script>
+    
+    <!-- custom js -->
+    <script src="../js/script.js"></script>
+</head>
+<body>
+    <!-- content -->
+    <div id="content">
+        <div class="lnb">
+            <div class="lnb-head">
+                <h1 class="logo white"></h1>
+            </div>
+
+            <div class="gnb">
+                <ul>
+                    <li>
+                        <a href="javascript:void(0);">
+                            <i class="ic-gnb01"></i>
+                            <p>실시간 현황</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">
+                            <i class="ic-gnb02"></i>
+                            <p>실시간 그래프</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">
+                            <i class="ic-gnb03"></i>
+                            <p>관리일지</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">
+                            <i class="ic-gnb04"></i>
+                            <p>인증서</p>
+                        </a>
+                    </li>
+                    <li class="on">
+                        <a href="javascript:void(0);">
+                            <i class="ic-gnb05"></i>
+                            <p>설정</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="contents">
+            <div class="headline">
+                <p>설정</p>
+            </div>
+            <div class="setting">
+                <div class="container">
+                    <div class="division">
+                        <div class="inner">
+                            <div class="form col">
+                                <div class="form-tit">
+                                    <p class="tit">설치장소</p>
+                                </div>
+                                <div class="form-cont">
+                                    <div class="d-flex align-items-center gap-2">
+                                        <input type="text" name="" id="" class="col-1">
+                                        <button class="btn md line-green"><i class="ic-modify green"></i>수정</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form col mt20">
+                                <div class="form-tit">
+                                    <p class="tit">담당자</p>
+                                </div>
+                                <div class="form-cont">
+                                    <div class="d-flex align-items-center gap-2">
+                                        <input type="text" name="" id="" class="col-1">
+                                        <button class="btn md line-green"><i class="ic-modify green"></i>수정</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form col mt20">
+                                <div class="form-tit">
+                                    <p class="tit">
+                                        휴대폰 번호 <br>
+                                        (문자수신 가능번호)
+                                    </p>
+                                </div>
+                                <div class="form-cont">
+                                    <div class="d-flex align-items-center gap-2">
+                                        <input type="text" name="" id="" class="col-1">
+                                        <button class="btn md line-green"><i class="ic-modify green"></i>수정</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form col mt20">
+                                <div class="form-tit">
+                                    <p class="tit">로그인 2차인증 사용</p>
+                                </div>
+                                <div class="form-cont d-flex align-items-center">
+                                    <div class="check v3">
+                                        <input type="checkbox" name="" id="" checked>
+                                        <label for="">
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form col mt20">
+                                <div class="form-tit">
+                                    <p class="tit">라돈 농도 단위 표시</p>
+                                </div>
+                                <div class="form-cont">
+                                    <div class="d-flex gap-1">
+                                        <div class="radio v1">
+                                            <input type="radio" name="" id="" checked>
+                                            <label for="">
+                                                <p>Bq/㎥</p>
+                                            </label>
+                                        </div>
+                                        <div class="radio v1">
+                                            <input type="radio" name="" id="">
+                                            <label for="">
+                                                <p>pCi/L</p>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form col mt20">
+                                <div class="form-tit">
+                                    <p class="tit">실시간현황 라돈값 설정</p>
+                                </div>
+                                <div class="form-cont">
+                                    <div class="d-flex gap-1">
+                                        <div class="radio v1">
+                                            <input type="radio" name="" id="" checked>
+                                            <label for="">
+                                                <p>48시간 평균값</p>
+                                            </label>
+                                        </div>
+                                        <div class="radio v1">
+                                            <input type="radio" name="" id="">
+                                            <label for="">
+                                                <p>1시간 평균값</p>
+                                            </label>
+                                        </div>
+                                        <div class="radio v1">
+                                            <input type="radio" name="" id="">
+                                            <label for="">
+                                                <p>실시간값</p>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- // content -->
+</body>
+</html>
