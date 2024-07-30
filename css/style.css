@@ -1,0 +1,37 @@
+.division {border-radius: 20px; background-color: #ffffff; padding: 30px 20px;}
+.division + .division {margin-top: 20px;}
+.division:has(> .filter) {padding: 14px 20px;}
+
+.filter {padding: 0 20px; display: flex; justify-content: space-between; align-items: center;}
+.filter .requirement-area {display: flex; gap: 0 20px;}
+.filter .requirement-area .item {min-width: 150px;}
+.filter .requirement-area .item .tit-area p {font-size: 12px; color: #868E96; line-height: 1.3334;}
+.filter .requirement-area .item .tit-area + cont-area {margin-top: 4px;}
+.filter .requirement-area .item select.v1,
+.filter .requirement-area .item .date input[type="text"],
+.filter .requirement-area .item .date input[type="date"] {height: 32px;}
+
+.filter .sort-area {display: flex; gap: 0 20px;}
+
+.legend {display: flex; width; fit-content; margin: 0 auto; padding: 8x 20px; border-radius: 30px; background-color: #F8F9FA; gap: 0 20px;}
+.legend dl {display: flex; gap: 0 8px;}
+.legend dl dt {font-size: 16px; line-height: 1.143; font-weight: 600;}
+.legend dl dd {font-size: 14px; line-height: 1.143; color: #868E96;}
+
+.login {min-height: 100dvh; display: flex; align-items: center; justify-content: center;}
+.login .inner {box-shadow: 0 2px 20px 0px #0000001A; width: 796px; border-radius: 20px; overflow: hidden; display: flex; align-items: stretch;}
+.login .inner > * {flex: none; width: 50%;}
+.login .inner .welcome {background: #12B886 url('../img/bg_login.png') no-repeat center bottom; background-size: 357px; padding: 30px 50px;}
+.login .inner .welcome .hello {margin-top: 20px; color: #ffffff; font-size: 36px; line-height: 1.6;}
+.login .inner .welcome .text {margin-top: 4px; font-size: 20px; line-height: 1.6; color: #ffffff;}
+.login .inner .form-area {padding: 60px 40px 70px; background-color: #ffffff;}
+
+.dashboard .inner {padding: 0 105px; display: flex; flex-wrap: wrap; gap: 30px 30px;}
+.dashboard .inner .bx-area {width: calc((100% - 90px)/4); border-radius: 20px; background-color; #ffffff; position: relative; padding: 20px 40px 20px 30px; display: flex; flex-wrap: wrap; gap: 0 20px;}
+.dashboard .inner .bx-area .spot {width: 100%; font-size: 26px; font-weight: 700; margin-bottom: 30px;}
+.dashboard .inner .bx-area .status-area {flex: 1 0;}
+.dashboard .inner .bx-area .status-area .total .title {font-size: 14px; font-weight: 700;}
+.dashboard .inner .bx-area .status-area .total .value {font-size: 48px; font-weight: 700}
+.dashboard .inner .bx-area .status-area .check.v2 {width: calc((100% - 8px)/2px); max-width: 95px;}
+.dashboard .inner .bx-area .graph-area {max-width: 70px;}
+.dashboard .inner .bx-area .graph-area > * {margin: 0 auto;}
