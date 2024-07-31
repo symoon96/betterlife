@@ -85,6 +85,8 @@ i[class^='ic-'] {display: block; background-repeat: no-repeat; background-positi
 
 .tit.v1 {font-size: 20px; font-weight: 600;}
 .tit.v2 {font-size: 24px; font-weight: 700; text-align: center; margin-bottom: 20px;}
+.tit.v3 {font-size: 30px; font-weight: 700; text-align: center;}
+.tit.v4 {font-size: 18px; font-weight: 700; width; fit-content; margin-left; auto; margin-right: auto; line-height: 36px; border-radius: 18px; background-color: #E9ECEF; padding: 0 15px;}
 
 /* text */
 .txt-warning{}
@@ -93,6 +95,16 @@ i[class^='ic-'] {display: block; background-repeat: no-repeat; background-positi
 /* table */
 .tbl-wrap{}
 .tbl-wrap table{ width: 100%; table-layout: fixed; }
+
+.tbl-caption {display: flex; align-items: center; justify-content: flex-end;}
+.tbl-caption dl {display: flex; align-items: center; gap: 0 8px;}
+.tbl-caption dl dt {font-size: 14px; font-weight: 600;}
+.tbl-caption dl dd {font-size: 14px; color: #868E96;}
+
+.tbl-summary {display: flex; align-items: center; justify-content: center; gap: 0 20px;}
+.tbl-summary dl {display: flex; align-items: center; gap: 0 8px;}
+.tbl-summary dl dt {font-size: 14px; font-weight: 600;}
+.tbl-summary dl dd {font-size: 14px; color: #868E96;}
 
 .tbl-wrap.v1 table thead {background-color: #DEE2E6;}
 .tbl-wrap.v1 table thead tr th {padding: 20px 0; color: #858E96; font-size: 14px; font-weight: 700; line-height: 1.143;}
