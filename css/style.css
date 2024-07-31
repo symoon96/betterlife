@@ -43,8 +43,32 @@
 .report .report-preview .controller .pagination button + button::before {content: ""; width: 1px; height: 14px; background-color: #CED4DA; position: absolute; left: -11px; top: 50%; transform: translateY(-50%);}
 .report .report-preview .controller .action {display: flex; align-items: center; gap: 0 10px;}
 .report .report-preview .controller + .report-view {margin-top: 20px;}
-.report .report-preview .report-view {width: 1000px; border-radius: 20px; background-color: #ffffff; margin-left: auto; margin-right: auto; height: 1414px; display: flex; flex-direction: column; justify-content: flex-start; padding: 30px 30px 20px;}
-.report .report-preview .report-view .report-body {flex: 1 0;}
+.report .report-preview .report-view {width: 1000px; border-radius: 20px; background-color: #ffffff; margin-left: auto; margin-right: auto; height: 1414px; display: flex; flex-direction: column; justify-content: flex-start; padding: 30px 0 20px;}
+.report .report-preview .report-view .write-info {display: flex; align-items: center; gap: 0 40px;}
+.report .report-preview .report-view .write-info.center {justify-content: center;}
+.report .report-preview .report-view .write-info dl {padding-left: 20px; border-left: 1px solid #CED4DA;}
+.report .report-preview .report-view .write-info dl dt {font-size: 12px; font-weight: 600; color: #868E96; line-height: 1.3334;}
+.report .report-preview .report-view .write-info dl dd {margin-top: 10px; font-size: 14px; font-weight: 600;}
+.report .report-preview .report-view .report-head {border-bottom: 1px solid #CED4DA; padding: 30px 50px; background: url('../img/common/logo_d.png') no-repeat right 50px center; background-size: 143px;}
+.report .report-preview .report-view .report-head + .report-body {padding-top: 60px;}
+.report .report-preview .report-view .report-head .title {display: flex; align-items: flex-end; gap: 0 4px;}
+.report .report-preview .report-view .report-head .title .kr {font-size: 48px; font-weight: 600;}
+.report .report-preview .report-view .report-head .title .en {font-size: 24px; font-weight: 600; color: #868E96;}
+.report .report-preview .report-view .report-head .text {margin-top: 14px; font-size: 16px; color: #868E96;} 
+.report .report-preview .report-view .report-body {flex: 1 0; padding: 0 30px;}
+.report .report-preview .report-view .report-body .status-area {margin-top: 40px; display: flex; flex-wrap: wrap; gap: 40px 60px; padding-left: 60px; padding-right: 60px;}
+.report .report-preview .report-view .report-body .status-area .item {width: calc((100% - 180px)/4); display: flex; align-items: flex-end; gap: 0 20px;}
+.report .report-preview .report-view .report-body .status-area .item .graph {width: 27px;}
+.report .report-preview .report-view .report-body .status-area .item .cont-area .spot {font-size: 14px; font-weight: 700;}
+.report .report-preview .report-view .report-body .status-area .item .cont-area .value {margin-top: 8px; font-size: 32px; font-weight: 700;}
+.report .report-preview .report-view .report-body .status-area .item .cont-area .unit {font-size: 14px; color: #868E96;}
+.report .report-preview .report-view .report-body .status-area .item .cont-area .standard {margin-top: 8px; font-size: 11px; color: #868E96;}
+.report .report-preview .report-view .report-body .text-area {padding-left: 80px; padding-right: 80px;}
+.report .report-preview .report-view .report-foot .date {text-align: center; font-size: 20px; line-height: 1.2;}
+.report .report-preview .report-view .report-foot .sign {margin-top: 60px; font-size: 16px; text-align: right; padding-right: 110px;}
+.report .report-preview .report-view .report-foot .sign span {display: inline-block; line-height: 1.2; font-size: 16px; text-align: right; width: 130px;}
+.report .report-preview .report-view .report-foot .company {text-align: center; font-size: 12px; line-height: 1.3334; font-weight: 600; display; flex; align-items: center; justify-content: center; gap: 10px;}
+.report .report-preview .report-view .report-foot .logo {width: 252px; height: 46px; margin: 85px auto 120px;}
 
 .setting .inner {max-width: 605px; margin: 0 auto; padding-top: 30px; padding-bottom: 30px;}
 .setting .form.col .form-tit {width: 160px;}
