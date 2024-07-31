@@ -67,7 +67,7 @@
 .report .report-preview .report-view .report-foot .day {text-align: center; font-size: 20px; line-height: 1.2;}
 .report .report-preview .report-view .report-foot .sign {margin-top: 60px; font-size: 16px; text-align: right; padding-right: 110px;}
 .report .report-preview .report-view .report-foot .sign span {display: inline-block; line-height: 1.2; font-size: 16px; text-align: right; width: 130px;}
-.report .report-preview .report-view .report-foot .company {text-align: center; font-size: 12px; line-height: 1.3334; font-weight: 600; display: flex: align-items: center; justify-content: center; gap: 10px;}
+.report .report-preview .report-view .report-foot .company {text-align: center; font-size: 12px; line-height: 1.3334; font-weight: 600; display: flex; align-items: center; justify-content: center; gap: 10px;}
 .report .report-preview .report-view .report-foot .logo {width: 252px; height: 46px; margin: 85px auto 120px;}
 
 .setting .inner {max-width: 605px; margin: 0 auto; padding-top: 30px; padding-bottom: 30px;}
