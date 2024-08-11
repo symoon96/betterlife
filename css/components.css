@@ -19,6 +19,7 @@
 .btn.lg {height: 40px; border-radius: 8px; font-size: 13px; gap: 0 4px; padding: 0 12px;}
 
 .btn.fill-green {background-color: #66A80F; border-color: #66A80F; color: #ffffff;}
+.btn.fill-gray {background-color: #868E96; border-color: #868E96; color: #ffffff;}
 
 .btn.line-green {background-color: #ffffff; border-color: #66A80F; color: #66A80F;}
 
@@ -54,6 +55,9 @@ i[class^='ic-'] {display: block; background-repeat: no-repeat; background-positi
 .ic-graph-time01 {background-image: url('../img/icon/ic_graph_time_01.png');}
 .ic-graph-time02 {background-image: url('../img/icon/ic_graph_time_02.png');}
 .ic-graph-time03 {background-image: url('../img/icon/ic_graph_time_03.png');}
+.ic-back {width: 16px; height: 16px; background-image: url('../img/icon/ic_back.png');}
+.ic-modify {width: 16px; height: 16px;}
+.ic-modify.green { background-image: url('../img/icon/ic_modify_g.png');}
 
 /* label */
 .label.v1 {display: block; padding: 0 10px; border-radius: 22px; color: #ffffff; font-size: 12px; line-height: 22px; min-width: 62px;}
@@ -106,6 +110,11 @@ i[class^='ic-'] {display: block; background-repeat: no-repeat; background-positi
 .tbl-summary dl dt {font-size: 14px; font-weight: 600;}
 .tbl-summary dl dd {font-size: 14px; color: #868E96;}
 
+.tbl-top {display: flex; align-items: center;}
+.tbl-top dl {display: flex; align-items: center; gap: 0 8px;}
+.tbl-top dl dt {font-size: 14px; color: #868E96;}
+.tbl-top dl dd {font-size: 14px; font-weight: 600;}
+
 .tbl-wrap.v1 table thead {background-color: #DEE2E6;}
 .tbl-wrap.v1 table thead tr th {padding: 20px 0; color: #858E96; font-size: 14px; font-weight: 700; line-height: 1.143;}
 .tbl-wrap.v1 table tbody tr {border-bottom: 1px solid #CED4DA;}
@@ -114,14 +123,14 @@ i[class^='ic-'] {display: block; background-repeat: no-repeat; background-positi
 .tbl-wrap.v1 table tbody tr td .label.v1 {margin-left: 10px;}
 
 /* paging */
-.paging{}
-.paging ul{}
-.paging ul li{}
-.paging ul li a{}
-.paging ul li.front{}
-.paging ul li.prev{}
-.paging ul li.next{}
-.paging ul li.back{}
+.paging {display: flex; align-items: center; justify-content: center;}
+.paging ul {display: flex; align-items: center; justify-content: center;}
+.paging ul li {}
+.paging ul li a {display: block;}
+.paging ul li.front a,
+.paging ul li.prev a,
+.paging ul li.next a,
+.paging ul li.back a {background-repeat: no-repeat; background-size: 100%; background-position: center;}
 
 /*-------------------------------------------------------------------
     @collections
@@ -144,7 +153,7 @@ i[class^='ic-'] {display: block; background-repeat: no-repeat; background-positi
 input[type="text"], 
 input[type="password"] {display: block; width: 100%; height: 40px; padding: 0 20px; border-radius: 8px; border: 1px solid #CED4DA; background-color: #ffffff; font-size: 14px;}
 
-select.v1 {display: block; width: 100%; height: 40px; padding: 0 20px; border-radius: 8px; border: 1px solid #868E96; background: #ffffff url('../img/icon/ic_inp_select.png') no-repeat right 20px center; background-size: 16px; font-size: 14px; font-family: 'Pretendard';}
+select.v1 {display: block; width: 100%; height: 40px; padding: 0 20px; border-radius: 8px; border: 1px solid #CED4DA; background: #ffffff url('../img/icon/ic_inp_select.png') no-repeat right 20px center; background-size: 16px; font-size: 14px; font-family: 'Pretendard';}
 
 .check.v1 {width: fit-content;}
 .check.v1 input[type="checkbox"] {border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px;}

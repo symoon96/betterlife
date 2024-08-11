@@ -1,6 +1,7 @@
-.division {border-radius: 20px; background-color: #ffffff; padding: 30px 20px; overflow: hidden;}
+.division {border-radius: 20px; background-color: #ffffff; padding: 30px 20px; overflow: hidden; position: relative;}
 .division + .division {margin-top: 25px;}
 .division:has(> .filter) {padding: 14px 20px;}
+.division:has(.btn-back) {overflow: visible;}
 
 .filter {padding: 0 20px; display: flex; justify-content: space-between; align-items: center;}
 .filter .requirement-area {display: flex; gap: 0 20px;}
@@ -12,6 +13,8 @@
 .filter .requirement-area .item .date input[type="date"] {height: 32px;}
 
 .filter .sort-area {display: flex; gap: 0 20px; align-items: center;}
+
+.filter .btn-back {position: absolute; top: -10px; left: 10px; transform: translateY(-100%);}
 
 .legend {display: flex; width: fit-content; margin: 0 auto; padding: 8px 20px; border-radius: 30px; background-color: #F8F9FA; gap: 0 20px;}
 .legend dl {display: flex; gap: 0 8px;}

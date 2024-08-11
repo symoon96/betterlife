@@ -1,0 +1,246 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<title>BETTERLIFE</title>
+	<meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=yes">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+
+	<!-- reset css -->
+    <link href="../css/reset.css" rel="stylesheet" type="text/css">
+    <link href="../css/fonts.css" rel="stylesheet" type="text/css">
+    <link href="../css/utility.css" rel="stylesheet" type="text/css">
+
+    <!-- custom css -->
+    <link href="../css/common.css" rel="stylesheet" type="text/css">
+    <link href="../css/components.css" rel="stylesheet" type="text/css">
+    <link href="../css/style.css" rel="stylesheet" type="text/css">
+
+    <!-- jquery -->
+    <script src="../js/jquery-3.6.3.min.js"></script>
+    
+    <!-- custom js -->
+    <script src="../js/script.js"></script>
+</head>
+<body>
+    <!-- content -->
+    <div id="content">
+        <div class="lnb">
+            <div class="lnb-head">
+                <h1 class="logo white"></h1>
+            </div>
+
+            <div class="gnb">
+                <ul>
+                    <li>
+                        <a href="javascript:void(0);">
+                            <i class="ic-gnb01"></i>
+                            <p>실시간 현황</p>
+                        </a>
+                    </li>
+                    <li class="on">
+                        <a href="javascript:void(0);">
+                            <i class="ic-gnb02"></i>
+                            <p>실시간 그래프</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">
+                            <i class="ic-gnb03"></i>
+                            <p>관리일지</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">
+                            <i class="ic-gnb04"></i>
+                            <p>인증서</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">
+                            <i class="ic-gnb05"></i>
+                            <p>설정</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="contents">
+            <div class="headline">
+                <p>실시간 전체 그래프</p>
+            </div>
+            <div class="chart">
+                <div class="container">
+                    <div class="division">
+                        <div class="filter">
+                            <button class="btn md fill-gray btn-back"><i class="ic-back"></i>돌아가기</button>
+                            <div class="requirement-area">
+                                <div class="item">
+                                    <div class="tit-area">
+                                        <p>측정분류</p>
+                                    </div>
+                                    <div class="cont-area">
+                                        <select name="" id="" class="v1">
+                                            <option value="">전체 측정지점</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="tit-area">
+                                        <p>상세기간</p>
+                                    </div>
+                                    <div class="cont-area">
+                                        <div class="period">
+                                            <div class="date">
+                                                <input type="text" name="" id="">
+                                                <input type="date" name="" id="">
+                                            </div>
+                                            <div class="has-unit">
+                                                <select name="" id="" class="v1">
+                                                    <option value="">00</option>
+                                                </select>
+                                                <p class="unit">시</p>
+                                            </div>
+                                            <p>~</p>
+                                            <div class="date">
+                                                <input type="text" name="" id="">
+                                                <input type="date" name="" id="">
+                                            </div>
+                                            <div class="has-unit">
+                                                <select name="" id="" class="v1">
+                                                    <option value="">00</option>
+                                                </select>
+                                                <p class="unit">시</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sort-area">
+                                <div class="d-flex gap-2">
+                                    <button class="btn md line-green"><i class="ic-search green"></i>검색</button>
+                                    <button class="btn md line-green"><i class="ic-download green"></i>엑셀 다운로드</button>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="division">
+                        <p class="tit v2">조회 결과</p>
+
+                        <div class="legend">
+                            <dl>
+                                <dt>라돈1</dt>
+                                <dd>pci/L</dd>
+                            </dl>
+                            <dl>
+                                <dt>라돈2</dt>
+                                <dd>Bq/㎥</dd>
+                            </dl>
+                            <dl>
+                                <dt>온도</dt>
+                                <dd>°C</dd>
+                            </dl>
+                            <dl>
+                                <dt>습도</dt>
+                                <dd>%</dd>
+                            </dl>
+                            <dl>
+                                <dt>미세먼지</dt>
+                                <dd>μg/㎥</dd>
+                            </dl>
+                            <dl>
+                                <dt>CO₂</dt>
+                                <dd>ppm</dd>
+                            </dl>
+                        </div>
+
+                        <div class="tbl-top mt20">
+                            <dl>
+                                <dt>총</dt>
+                                <dd>00건</dd>
+                            </dl>
+                        </div>
+
+                        <div class="tbl-wrap v1 mt20">
+                            <table>
+                                <colgroup>
+                                    <col style="width: 7%;">
+                                    <col style="width: 13%;">
+                                    <col style="width: 10%;">
+                                    <col style="width: 9%;">
+                                    <col style="width: 9%;">
+                                    <col style="width: 7%;">
+                                    <col style="width: 7%;">
+                                    <col style="width: auto;">
+                                    <col style="width: 9%;">
+                                    <col style="width: 9%;">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th>번호</th>
+                                        <th>측정지점</th>
+                                        <th>측정일시</th>
+                                        <th>라돈1</th>
+                                        <th>라돈2</th>
+                                        <th>온도</th>
+                                        <th>습도</th>
+                                        <th>VOC</th>
+                                        <th>미세먼지</th>
+                                        <th>CO₂</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>내용내용내용내용</td>
+                                        <td>2024.01.01  10:00</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>22.4</td>
+                                        <td>12</td>
+                                        <td>-</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>내용내용내용내용</td>
+                                        <td>2024.01.01  10:00</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>22.4</td>
+                                        <td>12</td>
+                                        <td>-</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="paging mt20">
+                            <ul>
+                                <li class="front"><a href="javascript:void(0);"></a></li>
+                                <li class="prev"><a href="javascript:void(0);"></a></li>
+                                <li class="on"><a href="javascript:void(0);">1</a></li>
+                                <li><a href="javascript:void(0);">2</a></li>
+                                <li><a href="javascript:void(0);">3</a></li>
+                                <li><a href="javascript:void(0);">4</a></li>
+                                <li><a href="javascript:void(0);">5</a></li>
+                                <li class="next"><a href="javascript:void(0);"></a></li>
+                                <li class="back"><a href="javascript:void(0);"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- // content -->
+</body>
+</html>
